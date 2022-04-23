@@ -1,0 +1,30 @@
+.about-text-container {
+	h2 {
+		font-size: 64px;
+		color: #f42b7e;
+		font-family: 'Bebas Neue', cursive;
+		line-height: 6px;
+	}
+	p {
+		font-family: 'Poppins', sans-serif;
+		color: #fff;
+		font-size: 16px;
+		max-width: 613.95px;
+	}
+
+	.about-text-options-container {
+		.options {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 11px;
+			height: 87px;
+			width: 245px;
+			padding: 22px 6px 22px 6px;
+			img {
+				width: 44px;
+				height: 43px;
+			}
+		}
+	}
+}
