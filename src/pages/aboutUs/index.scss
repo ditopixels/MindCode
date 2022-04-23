@@ -1,12 +1,12 @@
+@import '../../styles/base';
+
 .about-text-container {
 	h2 {
 		font-size: 64px;
-		color: #f42b7e;
-		font-family: 'Bebas Neue', cursive;
+		color: $firstColor;
 		line-height: 6px;
 	}
 	p {
-		font-family: 'Poppins', sans-serif;
 		color: #fff;
 		font-size: 16px;
 		max-width: 613.95px;
