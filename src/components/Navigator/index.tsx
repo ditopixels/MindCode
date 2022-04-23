@@ -1,4 +1,6 @@
+import { Button } from "@mui/material"
 import { FC } from "react"
+import './styles.scss'
 
 const Navigator:FC = () => {
   return (
@@ -14,7 +16,7 @@ const Navigator:FC = () => {
                 Proyectos
             </li>
             <li>
-                <button>Contáctanos</button>
+                <Button variant="contained">Contáctanos</Button>
             </li>
         </ul>
     </nav>
