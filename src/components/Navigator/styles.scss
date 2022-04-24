@@ -1,0 +1,17 @@
+.navigator{
+    >ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        li{
+            color: #fff;
+            font-weight: 400;
+        }
+        .MuiButton-contained{
+            text-transform: none;
+            font-weight: 700;
+        }
+    }
+}
