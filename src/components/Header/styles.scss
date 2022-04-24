@@ -47,3 +47,52 @@
         transform: translate3d(0, 100%, 0);
     }
 }
+
+.header-desktop{
+    width: 100%;
+    background-color: $thridColor;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    transition: height .4s ease, color .4s ease;
+
+    &.scroll{
+        height: 75px;
+        position: fixed;
+        top: 0;
+        background-color: $secondColor;
+        .logo{
+            transform: scale(.8);
+        }
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1980px;
+        margin: 0 auto;
+        padding-left: 150px;
+        padding-right: 150px;
+        .menu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            .navigator > ul{
+                column-gap: 40px;
+                >:last-child{
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+    .logo {
+        height: 75px;
+        width: 75px;
+        transition: transform .4s ease;
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
