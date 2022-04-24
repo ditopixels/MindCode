@@ -14,6 +14,8 @@ function App() {
 				<Skills />
 			</main>
 			<Footer />
+			<Footer />
+			<Footer />
 		</>
 	)
 }

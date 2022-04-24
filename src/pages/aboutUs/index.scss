@@ -1,10 +1,25 @@
 @import '../../styles/base';
 
 .about-container {
+	padding-top: 40px;
+	padding: 80px 25px 50px;
 	background-color: $thridColor;
 	position: relative;
-	padding-top: 40px;
-	padding: 40px 25px 0 25px;
+
+	>*{
+		position: relative;
+		z-index: 1;
+	}
+
+	&::after{
+		content: "";
+		background-image: url('../../../public/background-about-us.svg');
+		position: absolute;
+		width: 100%;
+		height: 320px;
+		background-color: $secondColor;
+		bottom: 0;
+	}
 }
 
 .about-text-container {
@@ -28,11 +43,7 @@
 		padding-top: 20px;
 
 		.options {
-			background: linear-gradient(
-				90deg,
-				rgba(60, 60, 60, 0.8) 0%,
-				rgba(37, 40, 35, 0.8) 100%
-			);
+			background: linear-gradient(180deg, rgba(60, 60, 60, 0.8) 0%, rgba(37, 40, 35, 0.8) 100%);
 			display: flex;
 			flex-direction: row;
 			align-items: center;
