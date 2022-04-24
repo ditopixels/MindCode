@@ -15,7 +15,7 @@ const HeaderMobile:FC = () => {
         <div className='logo'>
           <MindCodeLogo/>
         </div>
-        
+
         <div className='menu'>
           <div className='menu-trigger' onClick={toggleMenu}>
             <MenuIcon/>

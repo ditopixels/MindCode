@@ -1,30 +1,87 @@
 @import '../../styles/base';
 
+.about-container {
+	background-color: $thridColor;
+	position: relative;
+	padding-top: 40px;
+	padding: 40px 25px 0 25px;
+}
+
 .about-text-container {
 	h2 {
-		font-size: 64px;
+		font-size: 50px;
 		color: $firstColor;
 		line-height: 6px;
+		margin-bottom: 35px;
 	}
 	p {
 		color: #fff;
-		font-size: 16px;
-		max-width: 613.95px;
+		font-size: 14px;
+		max-width: 387px;
+		font-weight: 100;
 	}
 
 	.about-text-options-container {
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+		padding-top: 20px;
+
 		.options {
+			background: linear-gradient(
+				90deg,
+				rgba(60, 60, 60, 0.8) 0%,
+				rgba(37, 40, 35, 0.8) 100%
+			);
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			gap: 11px;
 			height: 87px;
 			width: 245px;
-			padding: 22px 6px 22px 6px;
+			padding: 22px 15px 22px 15px;
+			border-radius: 8px;
+			&-2 > img {
+				width: 38px !important;
+			}
 			img {
 				width: 44px;
 				height: 43px;
 			}
+		}
+	}
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1090px) {
+	.about-container {
+		display: flex;
+		flex-direction: row;
+		gap: 100px;
+		justify-content: center;
+	}
+
+	.about-text-options-container {
+		flex-direction: row !important;
+	}
+
+	.about-text-container {
+		> h2 {
+			font-size: 64px;
+			color: $firstColor;
+			margin-bottom: 35px;
+		}
+		> p {
+			font-size: 16px;
+			max-width: 613.95px;
+			margin-top: 0;
+		}
+		.about-text-options-container p {
+			margin-top: 0;
+			color: #fff;
+			font-size: 14px;
+			margin-bottom: 0;
 		}
 	}
 }

@@ -1,49 +1,49 @@
 @import '../../styles/base';
 
-.header{
-    background-color: $secondColor;
+.header {
+	background-color: $secondColor;
 }
-.header-mobile{
-    width: 100%;
-    &__wrapper{
-        background-color: $secondColor;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        position: relative;
-        z-index: 100;
-    }
-    .logo {
-        height: 68px;
-        width: 68px;
-        svg{
-            width: 100%;
-            height: 100%;
-        }
-    }
+.header-mobile {
+	width: 100%;
+	&__wrapper {
+		background-color: $thridColor;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+		z-index: 100;
+	}
+	.logo {
+		height: 68px;
+		width: 68px;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
-.header-mobile .menu{
-    &-container{
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        bottom: 100%;
-        left: 0;
-        transition: transform .5s ease;
+.header-mobile .menu {
+	&-container {
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		bottom: 100%;
+		left: 0;
+		transition: transform 0.5s ease;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba($color: #000000, $alpha: 0.56);
-    }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba($color: #000000, $alpha: 0.56);
+	}
 }
-.header-mobile.open .menu{
-    &-container{
-        transform: translate3d(0, 100%, 0);
-    }
+.header-mobile.open .menu {
+	&-container {
+		transform: translate3d(0, 100%, 0);
+	}
 }
