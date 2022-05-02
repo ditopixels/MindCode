@@ -13,8 +13,7 @@ function App() {
 				<OurJobs />
 				<Skills />
 			</main>
-			<Footer />
-			<Footer />
+			<div style={{flex:"1"}}></div>
 			<Footer />
 		</>
 	)

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 import App from './App';
-import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const mdTheme = createTheme({
   palette:{
