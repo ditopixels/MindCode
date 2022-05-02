@@ -1,24 +1,24 @@
 @import '../../styles/base';
 
-.navigator{
-    >ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 40px;
+.navigator {
+	> ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 40px;
 
-        li{
-            color: #fff;
-            font-weight: 400;
-            font-size: 15px;
-        }
-        .MuiButton-contained{
-            text-transform: none;
-            font-weight: 700;
-        }
+		li {
+			color: #fff;
+			font-weight: 400;
+			font-size: 15px;
+		}
+		.MuiButton-contained {
+			text-transform: none;
+			font-weight: 700;
+		}
 
-        @media screen and (min-width: $bk-laptop) {
-            flex-direction: row;    
-        }
-    }
+		@media screen and (min-width: $bk-laptop) {
+			flex-direction: row;
+		}
+	}
 }
