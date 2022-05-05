@@ -22,11 +22,9 @@ const Contactanos: FC = () => {
 						Contáctanos
 					</Button>
 				</ModalTrigger>
-        <ModalLayout>
-          <section>
-            Contenido de ejemplo
-          </section>
-        </ModalLayout>
+				<ModalLayout>
+					<section>Contenido de ejemplo</section>
+				</ModalLayout>
 			</Modal>
 		</>
 	)
