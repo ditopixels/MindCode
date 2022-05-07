@@ -1,0 +1,115 @@
+@import '../../styles/base';
+
+.newsletter {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(
+		180deg,
+		rgba(60, 60, 60, 0.8) 0%,
+		rgba(37, 40, 35, 0.8) 100%
+	);
+	border-radius: 8px;
+	width: 95%;
+	max-height: 198px;
+	margin: 0 auto;
+	padding: 20px 20px;
+	gap: 30px;
+	align-items: center;
+
+	.start-proyect {
+		p {
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 13px;
+			color: #fff;
+		}
+	}
+
+	.coffe {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 13px;
+			color: #fff;
+			margin-bottom: 5px;
+			font-family: 'Poppins';
+			font-style: normal;
+			text-align: center;
+		}
+		p:first-child {
+			font-weight: 700;
+		}
+		p:last-child {
+			font-weight: 400;
+		}
+	}
+
+	@media only screen and (max-width: $bk-laptop) {
+		.contact-footer .modal-trigger .MuiButton-root {
+			font-size: 12px !important;
+		}
+	}
+}
+
+@media only screen and (min-width: $bk-laptop) {
+	.newsletter {
+		display: flex;
+		justify-content: center;
+		background: linear-gradient(
+			180deg,
+			rgba(60, 60, 60, 0.8) 0%,
+			rgba(37, 40, 35, 0.8) 100%
+		);
+		border-radius: 8px;
+		max-width: 940px;
+		width: 100%;
+		max-height: 198px;
+		height: 198px;
+		margin: 0 auto;
+		padding: 0 40px;
+		gap: 90px;
+		align-items: center;
+
+		.start-proyect {
+			p {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 36px;
+				color: #fff;
+			}
+		}
+
+		.coffe {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			p {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			p:first-child {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 17px;
+				color: #fff;
+				margin-bottom: 5px;
+			}
+			p:last-child {
+				font-family: 'Poppins';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 17px;
+				color: #fff;
+			}
+		}
+	}
+}

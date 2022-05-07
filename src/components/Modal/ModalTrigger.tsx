@@ -2,22 +2,21 @@ import { FC, ReactNode, useContext } from 'react'
 import { ModalContext } from './Modal'
 
 interface ModalTriggerProps {
-  children: ReactNode
+	children: ReactNode
 }
 
-const ModalTrigger:FC<ModalTriggerProps> = ({children}) => {
+const ModalTrigger: FC<ModalTriggerProps> = ({ children }) => {
+	const { setOpen } = useContext(ModalContext)
 
-  const { setOpen } = useContext(ModalContext)
-
-  const handleOpenModal = () => {
+	const handleOpenModal = () => {
 		if (setOpen) setOpen(true)
 	}
 
-  return (
-    <button className='modal-trigger' onClick={handleOpenModal}>
-      {children}
-    </button>
-  )
+	return (
+		<div className="modal-trigger" onClick={handleOpenModal}>
+			{children}
+		</div>
+	)
 }
 
 export default ModalTrigger

@@ -6,23 +6,26 @@ interface ModalContextInterface {
 }
 
 interface ModalProps {
-  children: ReactNode
+	children: ReactNode
 }
 
-export const ModalContext = createContext < ModalContextInterface>({})
+export const ModalContext = createContext<ModalContextInterface>({})
 
-const Modal:FC<ModalProps> = ({children}) => {
-  const [open, setOpen] = useState<boolean>(false)
+const Modal: FC<ModalProps> = ({ children }) => {
+	const [open, setOpen] = useState<boolean>(false)
 
-  useEffect(()=>{
-    if(open){
-      document.body.style.overflow = 'hidden'
-    }
-  },[open])
+	useEffect(() => {
+		if (open) {
+			document.body.style.overflow = 'hidden'
+		}
+		if (open === false) {
+			document.body.style.overflow = 'visible'
+		}
+	}, [open])
 
-  return (
+	return (
 		<ModalContext.Provider value={{ open, setOpen }}>
-      {children}
+			{children}
 		</ModalContext.Provider>
 	)
 }
