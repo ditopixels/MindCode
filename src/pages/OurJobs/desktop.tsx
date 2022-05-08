@@ -1,8 +1,11 @@
 import { FC } from 'react'
 import Carousel from '../../components/Carousel'
+import projects from '../../assets/ourProjects.json'
 import './index.scss'
+import ProjectCard from '../../components/ProjectCard'
 
 const OurJobsDesktop: FC = () => {
+
 	return (
 		<div style={{width:"90%",margin:"auto"}}>
 			<Carousel
@@ -25,9 +28,11 @@ const OurJobsDesktop: FC = () => {
 					slideShadows: false,
 				}}
 			>
-				<img src="/proyecto-debarricas.png" alt=""/>
-				<img src="/proyecto-dermatologica.png" alt=""/>
-				<img src="/proyecto-grupomercury.png" alt=""/>
+				{projects.map(project=>(
+					<div key={project.id}>
+						<ProjectCard {...project}/>
+					</div>
+				))}
 			</Carousel>
 		</div>
 	)

@@ -15,13 +15,13 @@ const ModalLayout: FC<ModalLayoutProps> = ({ children }) => {
 	}
 
 	return createPortal(
-		<div className={`modal-context ${open ? 'open' : 'close'}`}>
-      <div className="back-layout modal-open">
-        <div className="container-modal">
-          <button onClick={handleCloseModal}>CERRAR</button>
-          {children}
-        </div>
-      </div>
+		<div className={`modal-context ${open ? 'open' : 'close'}`} onClick={handleCloseModal}>
+			<div className="back-layout modal-open">
+				<button className='modal-button' onClick={handleCloseModal}>CERRAR</button>
+				<div className="container-modal" onClick={(e)=>e.stopPropagation()}>
+					{children}
+				</div>
+			</div>
 		</div>,
 		document.body
 	)

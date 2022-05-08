@@ -3,6 +3,11 @@
 .modal-context.close{
   display: none;
 }
+.modal-button{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
 
 .modal-context {
 	min-height: 100vh;
@@ -16,7 +21,7 @@
 	align-items: center;
 	left: 0;
 	top: 0;
-  overflow: auto;
+  	overflow: auto;
 
 	&.modal-open > body {
 		overflow: hidden;
@@ -25,10 +30,10 @@
 	.container-modal {
 		background: linear-gradient(141.52deg, #232826 43.75%, #1b1b1b 100%);
 		min-width: 510px;
-		width: 510px;
 		min-height: 638px;
 		border-radius: 8px;
 		color: #fff;
-    margin: 2rem;
+    	margin: 2rem;
+		max-width: calc(100vw - 4rem);
 	}
 }

@@ -1,0 +1,17 @@
+.projectcard{
+    width: 100%;
+    &-container{
+        display: flex;
+        width: 100%;
+    }
+    &-slider{
+        width: 50%;
+        &__image{
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+    &-description{
+        width: 50%;
+    }
+}

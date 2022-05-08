@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Mercury",
+        "description": "Lorem de prueba",
+        "images":[
+            "/projects/proyecto-grupomercury.png",
+            "/projects/proyecto-grupomercury2.png",
+            "/projects/proyecto-grupomercury3.png",
+            "/projects/proyecto-grupomercury4.png",
+            "/projects/proyecto-grupomercury5.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Debarricas",
+        "description": "Lorem de prueba",
+        "images":[
+            "/projects/proyecto-debarricas.png",
+            "/projects/proyecto-debarricas2.png",
+            "/projects/proyecto-debarricas3.png",
+            "/projects/proyecto-debarricas4.png",
+            "/projects/proyecto-debarricas5.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Dermatologica",
+        "description": "Lorem de prueba",
+        "images":[
+            "/projects/proyecto-dermatologica.png",
+            "/projects/proyecto-dermatologica2.png",
+            "/projects/proyecto-dermatologica3.png",
+            "/projects/proyecto-dermatologica4.png",
+            "/projects/proyecto-dermatologica5.png"
+        ]
+    }
+]
